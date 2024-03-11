@@ -8,7 +8,6 @@ import { SpinnerSVG } from 'theme/components'
 import { isBrowserRouterEnabled } from 'utils/env'
 
 // High-traffic pages (index and /swap) should not be lazy-loaded.
-import Landing from './Landing'
 import Swap from './Swap'
 
 const NftExplore = lazy(() => import('nft/pages/explore'))
@@ -99,7 +98,7 @@ export const routes: RouteDefinition[] = [
   createRouteDefinition({
     path: '/',
     getElement: (args) => {
-      return args.browserRouterEnabled && args.hash ? <Navigate to={args.hash.replace('#', '')} replace /> : <Landing />
+      return args.browserRouterEnabled && args.hash ? <Navigate to={args.hash.replace('#', '')} replace /> : <Swap />
     },
   }),
   createRouteDefinition({

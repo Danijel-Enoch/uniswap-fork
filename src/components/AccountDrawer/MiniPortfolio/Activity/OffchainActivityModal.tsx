@@ -138,7 +138,7 @@ export function OrderContent({ order }: { order: SelectedOrderInfo }) {
             {amounts && <TradeSummary trade={amounts} />}
             <ThemedText.BodySmall paddingTop="48px" textAlign="center">
               <ExternalLink href="https://support.uniswap.org/hc/en-us/articles/17515415311501">
-                <Trans>Learn more about swapping with UniswapX</Trans>
+                <Trans>Learn more about swapping with BungaswapX</Trans>
               </ExternalLink>
             </ThemedText.BodySmall>
           </Column>

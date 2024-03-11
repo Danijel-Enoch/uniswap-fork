@@ -21,6 +21,7 @@ export const PageWrapper = styled.div`
   }
 `
 
+//TODO this where background is fixed
 // Mostly copied from `AppBody` but it was getting too hard to maintain backwards compatibility.
 const SwapWrapperOuter = styled.main<{ isDark?: boolean }>`
   position: relative;
@@ -36,7 +37,7 @@ const SwapWrapperOuter = styled.main<{ isDark?: boolean }>`
     inset: 0;
     transform: scale(1.1);
     filter: blur(50px);
-    background-color: rgba(252, 114, 255, 0.075);
+    background-color: #74361d;
     z-index: -2;
   }
 

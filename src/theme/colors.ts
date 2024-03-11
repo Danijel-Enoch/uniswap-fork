@@ -23,7 +23,7 @@ export const colors = {
   gray900: '#0D111C',
   gray950: '#080B11',
   pink50: '#F9ECF1',
-  pink100: '#FFD9E4',
+  pink100: '#74361D',
   pink200: '#FBA4C0',
   pink300: '#FF6FA3',
   pink400: '#FB118E',
@@ -82,8 +82,8 @@ export const colors = {
   blue900: '#040E34',
   blueVibrant: '#587BFF',
   // TODO: add magenta 50-900
-  magenta300: '#FD82FF',
-  magentaVibrant: '#FC72FF',
+  magenta300: '#74361D',
+  magentaVibrant: '#74361D',
   purple300: '#8440F2',
   purple900: '#1C0337',
   purpleVibrant: '#6100FF',
@@ -106,7 +106,7 @@ export const colors = {
   surface3_dark: '#FFFFFF12',
   surface4_dark: '#FFFFFF20',
   surface5_dark: '#00000004',
-  accent1_dark: '#FF5F52',
+  accent1_dark: '#74361D',
   accent2_dark: '#311C31',
   neutral1_light: '#222222',
   neutral2_light: '#7D7D7D',
@@ -150,7 +150,7 @@ const commonTheme = {
   chain_56_background: colors.networkBsc,
   promotional: colors.magenta300,
 
-  brandedGradient: 'linear-gradient(139.57deg, #FF5F52 4.35%, #FF5F52 96.44%);',
+  brandedGradient: 'linear-gradient(139.57deg, #74361D 4.35%, #74361D 96.44%);',
   promotionalGradient: colors.accent1_light,
 }
 
@@ -179,21 +179,20 @@ export const darkTheme = {
 export const lightTheme: Theme = {
   ...commonTheme,
 
-  background: colors.white,
+  background: colors.black,
 
-  neutral1: colors.neutral1_light,
-  neutral2: colors.neutral2_light,
-  neutral3: colors.neutral3_light,
+  neutral1: colors.neutral1_dark,
+  neutral2: colors.neutral2_dark,
+  neutral3: colors.neutral3_dark,
 
-  surface1: colors.surface1_light,
-  surface2: colors.surface2_light,
-  surface3: colors.surface3_light,
-  surface4: colors.surface4_light,
-  surface5: colors.surface5_light,
+  surface1: colors.surface1_dark,
+  surface2: colors.surface2_dark,
+  surface3: colors.surface3_dark,
+  surface4: colors.surface4_dark,
+  surface5: colors.surface5_dark,
 
-  accent1: colors.accent1_light,
-  accent2: colors.accent2_light,
-
+  accent1: colors.accent1_dark,
+  accent2: colors.accent2_dark,
   success: colors.success,
   critical: colors.critical,
   scrim: colors.scrim,

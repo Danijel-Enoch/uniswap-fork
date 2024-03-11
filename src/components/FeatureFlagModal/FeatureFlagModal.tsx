@@ -326,30 +326,30 @@ export default function FeatureFlagModal() {
             label="Enable quick routes for these chains"
           />
         </FeatureFlagGroup>
-        <FeatureFlagGroup name="UniswapX Flags">
+        <FeatureFlagGroup name="BungaswapX Flags">
           <FeatureFlagOption
             variant={BaseVariant}
             value={useUniswapXSyntheticQuoteFlag()}
             featureFlag={FeatureFlag.uniswapXSyntheticQuote}
-            label="Force synthetic quotes for UniswapX"
+            label="Force synthetic quotes for BungaswapX"
           />
           <FeatureFlagOption
             variant={BaseVariant}
             value={useUniswapXEthOutputFlag()}
             featureFlag={FeatureFlag.uniswapXEthOutputEnabled}
-            label="Enable eth output for UniswapX orders"
+            label="Enable eth output for BungaswapX orders"
           />
           <FeatureFlagOption
             variant={BaseVariant}
             value={useUniswapXExactOutputFlag()}
             featureFlag={FeatureFlag.uniswapXExactOutputEnabled}
-            label="Enable exact output for UniswapX orders"
+            label="Enable exact output for BungaswapX orders"
           />
           <FeatureFlagOption
             variant={BaseVariant}
             value={useUniswapXDefaultEnabledFlag()}
             featureFlag={FeatureFlag.uniswapXDefaultEnabled}
-            label="Enable UniswapX by default"
+            label="Enable BungaswapX by default"
           />
         </FeatureFlagGroup>
         <FeatureFlagGroup name="Info Site Migration">
