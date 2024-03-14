@@ -49,7 +49,7 @@ export const UniswapXOptIn = (props: { swapInfo: SwapInfo; isSmall: boolean }) =
   return (
     <Trace
       shouldLogImpression
-      name="BungaswapX Opt In Impression"
+      name="HapeSWapX Opt In Impression"
       properties={trade ? formatCommonPropertiesForTrade(trade, allowedSlippage) : undefined}
     >
       <OptInContents isOnClassic={isOnClassic} {...props} />
@@ -91,7 +91,7 @@ const OptInContents = ({
         }, 200)
 
         if (!trade) return
-        sendAnalyticsEvent('BungaswapX Opt In Toggled', {
+        sendAnalyticsEvent('HapeSwapX Opt In Toggled', {
           ...formatCommonPropertiesForTrade(trade, allowedSlippage),
           new_preference: RouterPreference.X,
         })
@@ -135,7 +135,7 @@ const OptInContents = ({
           size={18}
           onClick={() => {
             if (!trade) return
-            sendAnalyticsEvent('BungaswapX Opt In Toggled', {
+            sendAnalyticsEvent('HapeSWapX Opt In Toggled', {
               ...formatCommonPropertiesForTrade(trade, allowedSlippage),
               new_preference: RouterPreference.API,
             })
